@@ -9,9 +9,18 @@
 import SwiftUI
 
 struct ContentView : View {
+    
+    @State var model = PostListViewModel()
+    
     var body: some View {
-        Text("Hello World")
+        VStack {
+            List(model.posts) { post in
+                Text(post.title)
+                Text(post.body)
+            }
+        }
     }
+    
 }
 
 #if DEBUG

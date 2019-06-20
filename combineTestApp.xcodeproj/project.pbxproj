@@ -15,6 +15,9 @@
 		9C8E8BC022BAC8ED0088DF25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8E8BBE22BAC8ED0088DF25 /* LaunchScreen.storyboard */; };
 		9C8E8BCB22BAC8ED0088DF25 /* combineTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8E8BCA22BAC8ED0088DF25 /* combineTestAppTests.swift */; };
 		9C8E8BD622BAC8ED0088DF25 /* combineTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8E8BD522BAC8ED0088DF25 /* combineTestAppUITests.swift */; };
+		9C8E8BE522BAC97D0088DF25 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8E8BE422BAC97D0088DF25 /* Post.swift */; };
+		9C8E8BE822BAC9C90088DF25 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8E8BE722BAC9C90088DF25 /* WebService.swift */; };
+		9C8E8BEB22BACC690088DF25 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8E8BEA22BACC690088DF25 /* PostListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		9C8E8BD122BAC8ED0088DF25 /* combineTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = combineTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8E8BD522BAC8ED0088DF25 /* combineTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = combineTestAppUITests.swift; sourceTree = "<group>"; };
 		9C8E8BD722BAC8ED0088DF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C8E8BE422BAC97D0088DF25 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		9C8E8BE722BAC9C90088DF25 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		9C8E8BEA22BACC690088DF25 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		9C8E8BB222BAC8EA0088DF25 /* combineTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C8E8BE922BACC4C0088DF25 /* ViewModels */,
+				9C8E8BE622BAC9AA0088DF25 /* Service */,
+				9C8E8BE322BAC9640088DF25 /* Models */,
 				9C8E8BB322BAC8EA0088DF25 /* AppDelegate.swift */,
 				9C8E8BB522BAC8EA0088DF25 /* SceneDelegate.swift */,
 				9C8E8BB722BAC8EA0088DF25 /* ContentView.swift */,
@@ -134,6 +143,30 @@
 				9C8E8BD722BAC8ED0088DF25 /* Info.plist */,
 			);
 			path = combineTestAppUITests;
+			sourceTree = "<group>";
+		};
+		9C8E8BE322BAC9640088DF25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C8E8BE422BAC97D0088DF25 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9C8E8BE622BAC9AA0088DF25 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9C8E8BE722BAC9C90088DF25 /* WebService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9C8E8BE922BACC4C0088DF25 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9C8E8BEA22BACC690088DF25 /* PostListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +302,10 @@
 			files = (
 				9C8E8BB422BAC8EA0088DF25 /* AppDelegate.swift in Sources */,
 				9C8E8BB622BAC8EA0088DF25 /* SceneDelegate.swift in Sources */,
+				9C8E8BEB22BACC690088DF25 /* PostListViewModel.swift in Sources */,
 				9C8E8BB822BAC8EA0088DF25 /* ContentView.swift in Sources */,
+				9C8E8BE822BAC9C90088DF25 /* WebService.swift in Sources */,
+				9C8E8BE522BAC97D0088DF25 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
